@@ -1,0 +1,364 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px 40px; 
+    background-color: #4B3832; 
+    color: #FFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Logo (Kiri) & Tanggal (Tengah) */
+.brand-logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #D3B89C; 
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.current-date {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #e0e0e0;
+}
+
+
+/* Navigation Links (Kanan) */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #D3B89C;
+}
+
+
+/* Tombol dan User Link */
+.btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-group{
+    text-align: center;
+}
+
+.btn-danger{
+    margin-top: 10px;
+    background: rgb(255, 65, 65);
+}
+
+.btn1{
+    margin-top: 10px;
+    background:#2b7; color:#fff; border:none; padding:.5rem .75rem; border-radius:4px; cursor:pointer; text-decoration:none; display:inline-block;
+}
+
+.btn-login, .btn-logout {
+    background-color: #D3B89C; 
+    color: #4B3832;
+}
+
+.btn-login:hover, .btn-logout:hover {
+    background-color: #C1A286;
+}
+
+.user-link {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: border-color 0.3s;
+}
+
+.user-link:hover {
+    border-color: #D3B89C;
+}
+
+
+/* Dropdown Menu (Admin Manage) */
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background-color: #D3B89C;
+    color: #4B3832;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+    top: 100%; 
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.dropdown-content li a {
+    color: #4B3832;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Base & Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(../kopi.jpg) center/cover fixed ;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Main Content */
+.container {
+    width: 60%;
+    margin: 50px auto; 
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container1 {
+    width: 90%;
+    margin: 10px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container3 {
+    width: 50%;
+    margin: 10px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Titles and Tagline */
+.main-title {
+    text-align: center;
+    font-size: 2.8em;
+    color: #4B3832;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 1.6em;
+    color: #4B3832;
+    border-bottom: 2px solid #D3B89C; 
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+
+/* Store List (Daftar Toko) */
+.stores-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.store-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-left: 5px solid #D3B89C; 
+    border-radius: 8px;
+    border-top: solid 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.store-card:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.store-name {
+    font-size: 1.2em;
+    color: #4B3832;
+    margin: 0;
+}
+
+.store-location {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+}
+
+.view-details-button {
+    padding: 8px 15px;
+    background-color: #4B3832; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.view-details-button:hover {
+    background-color: #332722;
+}
+
+.no-stores-message {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4B3832; 
+    color: #FFF;
+    border-top: 3px solid #D3B89C;
+    width: 100%;
+}
+
+.copyright-text {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    border: 1px solid rgba(97, 0, 106, 0.2);
+}
+
+thead th {
+    background:#D3B89C;
+    padding: 12px;
+    border: 1px solid rgba(97, 0, 106, 0.2);
+}
+
+tbody td {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 12px;
+    border: 1px solid rgba(97, 0, 106, 0.2);
+    text-align: center;
+}
+
+tbody tr:hover {
+    background: rgba(232, 240, 251, 0.95);
+}
+
+.table-action a {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.flash { padding:.5rem; margin:.5rem 0; border-radius:4px; }
+.flash.error { background:#fee; color:#900; }
+.flash.success { background:#eefeef; color:#064; }
+.success-box { background:#eefeef; padding:.75rem; border:1px solid #cfe; border-radius:4px; }
+label { display:block; margin:.5rem 0; }
+input, textarea, select { width:100% ; padding:.4rem; }
+
+.non{
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+.non1{
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.non2{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    border-radius: 5px;
+}
+
+.description-text{
+    width: 150px;
+    text-align: center;
+}
